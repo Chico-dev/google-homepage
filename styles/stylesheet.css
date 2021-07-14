@@ -10,6 +10,11 @@
   padding: 8px;
 }
 
+.center-nav {
+  display: flex;
+  justify-content: center;
+}
+
 .right-nav {
   float: right;
   padding: 8px;
@@ -43,3 +48,10 @@
   border-radius: 6%;
 }
 
+.country {
+  font-family: arial, sans-serif;
+}
+
+.leaf {
+  width: 20px;
+}
