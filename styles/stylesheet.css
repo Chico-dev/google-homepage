@@ -1,3 +1,29 @@
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Liberation Sans", sans-serif;
+}
+
+.left-nav {
+  float: left;
+  padding: 8px;
+}
+
+.right-nav {
+  float: right;
+  padding: 8px;
+}
+
+.gmail-icon {
+  width: 33px;
+  border-radius: 50%;
+}
+
+.app-button {
+  width: 20px;
+}
+
 .logo {
   display: flex;
   align-items: center;
