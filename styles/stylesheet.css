@@ -60,6 +60,18 @@ main {
   border-radius: 6%;
 }
 
+.search-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   flex-direction: column;
