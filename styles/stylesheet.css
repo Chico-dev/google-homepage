@@ -1,3 +1,10 @@
+:root {
+  --button-background-colour: rgb(248, 249, 250);
+  --footer-background-colour: rgb(242, 242, 242);
+  --foot-border-colour: rgb(218, 220, 224);
+  --footer-font-colour: rgb(112, 117, 122);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +26,15 @@ body, input, button {
   color: #222;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .content {
   min-height: 100%;
   display: flex;
@@ -36,13 +52,8 @@ nav {
   padding: 15px;
 }
 
-nav .nav-left {
+.nav-left, nav-right {
   display: flex;
-}
-
-nav .nav-right {
-  display: flex;
-  padding: 10px;
 }
 
 .nav-links {
@@ -90,6 +101,7 @@ main {
 }
 
 .buttons {
+  background-color: var(--button-background-colour);
   padding: 10px;
   margin: 0 10px;
   border-radius: 5%;
@@ -98,34 +110,31 @@ main {
 
 footer {
   display: flex;
+  background-color: var(--footer-background-colour);
+  color: var(--footer-font-colour);
   flex-direction: column;
-  padding:20px;
 }
 
 footer .country {
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 footer .bottom-footer {
-  padding: 10px 20px;
+  padding: 15px 20px;
+  border: var(--foot-border-colour);
+  border-style: solid;
+  border-width: 1px;
   display: flex;
   justify-content: space-between;
 }
 
-footer .footer-left {
-  display: flex;
-}
-
-footer .footer-center {
-  display: flex;
-}
-
-footer .footer-right {
+.footer-left, .footer-center, .footer-right {
   display: flex;
 }
 
 .footer-links {
   padding-right: 7px;
+  margin-right: 20px;
 }
 
 .leaf {
