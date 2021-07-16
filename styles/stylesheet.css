@@ -138,27 +138,40 @@ footer {
 }
 
 footer .country {
-  padding: 15px 20px;
+  padding: 15px 30px;
+  font-size: 15px;
+  border: var(--foot-border-colour);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 footer .bottom-footer {
-  padding: 15px 20px;
-  border: var(--foot-border-colour);
-  border-top-style: solid;
-  border-top-width: 1px;
+  height: 49px;
+  padding: 8px 20px;
+  margin-top: -2px;
   display: flex;
   justify-content: space-between;
 }
 
 .footer-left, .footer-center, .footer-right {
   display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  width: 500px;
+}
+
+.footer-right {
+  width: 500px;
+  justify-content: flex-end;
 }
 
 .footer-links {
-  padding-right: 7px;
-  margin-right: 20px;
+  padding:7px 15px;
 }
 
 .leaf {
-  width: 20px;
+  width: 19px;
+  padding-right: 5px;
 }
