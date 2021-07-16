@@ -1,7 +1,8 @@
 :root {
+  --searchbar-border-colour: rgb(223, 225, 229);
   --button-background-colour: rgb(248, 249, 250);
   --footer-background-colour: rgb(242, 242, 242);
-  --foot-border-colour: rgb(218, 220, 224);
+  --footer-border-colour: rgb(218, 220, 224);
   --footer-font-colour: rgb(112, 117, 122);
 }
 
@@ -44,6 +45,12 @@ a:hover {
 .flex-structure {
   flex-shrink: 0;
 }
+
+/* 
+#############
+Header Design
+#############
+*/
 
 nav {
   padding: 6px;
@@ -89,8 +96,17 @@ nav {
   padding: 3px;
 }
 
+/* 
+###################
+Main Section Design
+###################
+*/
+
 main {
-  margin: 100px 0 0 0;
+  height: 437px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .logo {
@@ -100,31 +116,68 @@ main {
   justify-content: center;
 }
 
-.searchbar {
-  padding: 15px 0px;
+.search {
+  margin-top: 6px;
+  padding: 10px 0px;
   display: flex;
   justify-content: center;
 }
 
-.input-box {
-  border-color: rgb(209, 209, 221);
-  border-width: 2px;
+.searchbar {  
+  width: 584px;
+  height: 46px;
+  border-color: var(--searchbar-border-colour);
+  border-width: 1px;
   border-style: solid;
-  border-radius: 6%;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lens, .input-box {
+  margin-bottom: 1px;
+}
+
+.lens {
+  flex-shrink: 0;
+  padding: 6px 11px;
+}
+
+.input-box {
+  margin-right: 17px;
+  padding: 0px;
+  height: 32px;
+  color: rgb(0, 0, 0, 0.87);
+  font-size: 16px;
+  flex: 1;
+}
+
+.input-box:focus-visible {
+  outline: none;
 }
 
 .search-buttons {
+  margin-top: 9px;
+  padding: 10px 0px;
   display: flex;
   justify-content: center;
 }
 
 .buttons {
   background-color: var(--button-background-colour);
-  padding: 10px;
-  margin: 0 10px;
+  padding: 10px 17px;
+  margin: 0 6px;
   border-radius: 5%;
+  color: rgb(60, 64, 67);
   cursor: pointer;
 }
+
+/* 
+#############
+Footer Design
+#############
+*/
 
 .sticky-footer {
   flex: 1;
@@ -140,7 +193,7 @@ footer {
 footer .country {
   padding: 15px 30px;
   font-size: 15px;
-  border: var(--foot-border-colour);
+  border: var(--footer-border-colour);
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
