@@ -1,4 +1,6 @@
 :root {
+  --active-background-colour: rgba(60, 64, 67, 0.12);
+  --hover-background-colour: rgba(60, 64, 67, 0.08);
   --searchbar-border-colour: rgb(223, 225, 229);
   --button-background-colour: rgb(248, 249, 250);
   --footer-background-colour: rgb(242, 242, 242);
@@ -82,18 +84,35 @@ nav {
   padding: 4px 8px;
 }
 
-.app-button {
-  display: block;
-  width: 25px;
-  padding: 3px;
-  margin-left: 11px;
+.app-link {
+  margin-left: 10px;
 }
 
-.gmail-icon {
+.app-button {
+  display: block;
+  width: 40px;
+  padding: 10.5px;
+}
+
+.avatar-icon {
   display: block;
   border-radius: 50%;
-  width: 38px;
-  padding: 3px;
+  width: 40px;
+  padding: 4px;
+}
+
+.avatar-icon:hover {
+  background-color: var(--hover-background-colour);
+}
+
+.app-link:hover {
+  background-color: var(--hover-background-colour);
+  border-radius: 50%;
+}
+
+.app-link:active {
+  background-color: var(--active-background-colour);
+  border-radius: 50%;
 }
 
 /* 
