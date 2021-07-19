@@ -1,10 +1,11 @@
 :root {
+  --focus-colour: rgb(57, 142, 231);
   --active-background-colour: rgba(60, 64, 67, 0.12);
   --hover-background-colour: rgba(60, 64, 67, 0.08);
   --searchbar-border-colour: rgb(223, 225, 229);
   --button-background-colour: rgb(248, 249, 250);
   --footer-background-colour: rgb(242, 242, 242);
-  --footer-border-colour: rgb(218, 220, 224);
+  --border-colour: rgb(218, 220, 224);
   --footer-font-colour: rgb(112, 117, 122);
 }
 
@@ -156,6 +157,11 @@ main {
   justify-content: center;
 }
 
+.searchbar:hover, .searchbar:focus-within {
+  border-color: transparent;
+  box-shadow: 0px 1px 6px rgba(19, 19, 19, 0.25);    
+}
+
 .lens, .input-box {
   margin-bottom: 1px;
 }
@@ -175,7 +181,7 @@ main {
 }
 
 .input-box:focus-visible {
-  outline: none;
+  outline: transparent;
 }
 
 .search-buttons {
@@ -187,11 +193,21 @@ main {
 
 .buttons {
   background-color: var(--button-background-colour);
-  padding: 10px 17px;
+  padding: 9px 16px;
   margin: 0 6px;
   border-radius: 5%;
+  border: solid 1px var(--button-background-colour);
   color: rgb(60, 64, 67);
   cursor: pointer;
+}
+
+.buttons:hover {
+  border: solid 1px var(--border-colour);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.buttons:focus {
+  border: solid 1px var(--focus-colour);  
 }
 
 /* 
@@ -215,7 +231,7 @@ footer {
 footer .country {
   padding: 15px 30px;
   font-size: 15px;
-  border: var(--footer-border-colour);
+  border: var(--border-colour);
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
