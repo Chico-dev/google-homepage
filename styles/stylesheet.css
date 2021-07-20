@@ -1,3 +1,4 @@
+/* Creates variables so colours can be called throughout the css file */
 :root {
   --focus-colour: rgb(57, 142, 231);
   --active-background-colour: rgba(60, 64, 67, 0.12);
