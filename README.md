@@ -1,1 +1,1 @@
-Google home page clone, first project using HTML and CSS.     
+Google home page clone using only HTML and CSS.     
