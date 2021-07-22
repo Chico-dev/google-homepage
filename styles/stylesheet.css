@@ -1,4 +1,9 @@
-/* Creates variables so colours can be called throughout the css file */
+/* 
+##################################################################
+Creates variables so colours can be called throughout the css file
+##################################################################
+*/
+
 :root {
   --focus-colour: rgb(57, 142, 231);
   --active-background-colour: rgba(60, 64, 67, 0.12);
@@ -10,12 +15,20 @@
   --footer-font-colour: rgb(112, 117, 122);
 }
 
+
+/*
+###########
+Base styles
+###########
+*/
+
 html, body {
   width: 100%;
+  min-width: 375px;           /* Sets a minimum width to the page*/
 }
 
 body {
-  height: 100vh;
+  height: 100vh; 
 }
 
 body, input, button {
@@ -260,7 +273,12 @@ footer .bottom-footer {
   padding-right: 5px;
 }
 
-/* Media Queries */
+/* 
+#############
+Media Queries
+#############
+*/
+
 @media (max-width: 950px) {
 
   footer .bottom-footer {
@@ -288,9 +306,21 @@ footer .bottom-footer {
 }
 
 @media (max-width: 675px) {
-
   .footer-left {
     order: 2;
     width: 100%;
   }
-}
+
+  body {
+    font-size: 85%;
+  }
+
+  button, .nav-right, footer .country {
+    font-size: 95%;
+  }
+
+  .google-logo {
+    width: 55%;
+    max-width: 272px;
+  }
+} 
