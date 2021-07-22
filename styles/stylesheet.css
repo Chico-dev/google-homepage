@@ -10,13 +10,6 @@
   --footer-font-colour: rgb(112, 117, 122);
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-} */
-
 html, body {
   width: 100%;
 }
@@ -51,9 +44,9 @@ a:hover {
 }
 
 /* 
-#############
-Header Design
-#############
+##########
+Nav Design
+##########
 */
 
 nav {
