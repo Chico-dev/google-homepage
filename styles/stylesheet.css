@@ -24,7 +24,7 @@ Base styles
 
 html, body {
   width: 100%;
-  min-width: 340px;           /* Sets a minimum width to the page*/
+  min-width: 360px;           /* Sets a minimum width to the page*/
 }
 
 body {
